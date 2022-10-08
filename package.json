@@ -1,0 +1,26 @@
+{
+  "name": "clonecoding-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Block-Chain-Valley/CloneCoding-Contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Block-Chain-Valley/CloneCoding-Contract/issues"
+  },
+  "homepage": "https://github.com/Block-Chain-Valley/CloneCoding-Contract#readme",
+  "dependencies": {
+    "hardhat": "^2.11.2"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0"
+  }
+}
