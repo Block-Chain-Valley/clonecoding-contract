@@ -3,7 +3,7 @@
 
 pragma solidity ^0.8.17;
 
-import "./IERC20.sol";
+import "./myIERC20.sol";
 
 /**
  * @dev Implementation of the {IERC20} interface.
@@ -30,7 +30,7 @@ import "./IERC20.sol";
  * functions have been added to mitigate the well-known issues around setting
  * allowances. See {IERC20-approve}.
  */
-contract myERC20 is IERC20 {
+contract myERC20 is myIERC20 {
     mapping(address => uint256) private _balances;
 
     mapping(address => mapping(address => uint256)) private _allowances;
