@@ -2,12 +2,14 @@ import {React, useState, useEffect} from 'react'
 import {ethers} from 'ethers'
 import styles from './Wallet.module.css'
 import token_abi from './contract/abi.json'
-import contractAddress from './contract/deployedAddress.json'
+import deployedAddress from './contract/deployedAddress.json'
 import Interactions from './Interactions';
 
 const Wallet = () => {
 
 	// deploy simple token contract and paste deployed contract address here. This value is local ganache chain
+
+	const contractAddress = deployedAddress.address;
 
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [defaultAccount, setDefaultAccount] = useState(null);
@@ -97,7 +99,6 @@ const Wallet = () => {
 		setSigner(tempSigner);
 
 		let tempContract = new ethers.Contract(contractAddress, token_abi, tempSigner);
-		console.log(tempContract);
 		setContract(tempContract);	
 	}
 
