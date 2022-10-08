@@ -83,7 +83,7 @@ contract myERC20 is IERC20 {
      * {IERC20-balanceOf} and {IERC20-transfer}.
      */
     function decimals() public view virtual returns (uint8) {
-        return 18;
+        return 0;
     }
 
     /**
